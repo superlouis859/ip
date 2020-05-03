@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>ipLeak Popup</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/popup.css" type="text/css"/>
+</head>
+<body>
+    <div id="main">
+        <p id="ip"></p>
+        <img src="" id="flag">
+        <table class="table">
+          <tbody>
+            <tr class="top">
+              <td class="title">国家</td>
+              <td id="country">国家</td>
+            </tr>
+            <tr>
+              <td class="title">ISP</td>
+              <td id="isp">ISP</td>
+            </tr>
+            <tr>
+              <td class="title">本地IP</td>
+              <td id="localIP">Local IP</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <iframe
+      id="map"
+      width="300"
+      height="200"
+      frameborder="0" style="border:0"
+      src="" allowfullscreen="false">
+    </iframe>
+    <iframe id="iframe" sandbox="allow-same-origin" style="display: none"></iframe>
+    <script type="text/javascript" src="js/popup.js"></script>
+</body>
+</html>
